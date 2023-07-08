@@ -3,7 +3,7 @@ const sampleObject = { red: "#FF0000", green: "#00FF00", white: "#FFFFFF" };
 function hasKey(key) {
   //   write your code here
 	for (let object for sampleObject) {
-		if(key===object.key)
+		if(key===object)
 		{
 			return true;
 			break;
