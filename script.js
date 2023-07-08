@@ -1,16 +1,14 @@
 const sampleObject = { red: "#FF0000", green: "#00FF00", white: "#FFFFFF" };
 
 function hasKey(key) {
-  //   write your code here
-	for (let object in sampleObject) {
-		if(key===object)
-		{
-			return true;
-			break;
-		}
-	}return false;
+  for (let objectKey in sampleObject) {
+    if (key === objectKey) {
+      return true;
+    }
+  }
+  return false;
 }
 
-// Do not change the code below
+// Prompt the user to enter a key and check if it exists in the object
 const key = prompt("Enter Key.");
 alert(hasKey(key));
